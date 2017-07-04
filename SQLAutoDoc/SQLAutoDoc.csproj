@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{17759FC2-6A23-4227-8324-70F46E58887E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SQLAutoDoc</RootNamespace>
+    <AssemblyName>SQLAutoDoc</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\base\DBBase.cs" />
+    <Compile Include="classes\base\AutoDocBase.cs" />
+    <Compile Include="classes\base\AutoDocSQLBase.cs" />
+    <Compile Include="classes\OdbcDataSourceManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\UIManager.cs" />
+    <Compile Include="forms\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmAbout.designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmDatabase.Designer.cs">
+      <DependentUpon>frmDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmDesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmDesc.Designer.cs">
+      <DependentUpon>frmDesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmDetail.Designer.cs">
+      <DependentUpon>frmDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmDiff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmDiff.Designer.cs">
+      <DependentUpon>frmDiff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmScan.Designer.cs">
+      <DependentUpon>frmScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmStatus.Designer.cs">
+      <DependentUpon>frmStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="general\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="general\frmAbout.designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="general\frmDSN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="general\frmDSN.designer.cs">
+      <DependentUpon>frmDSN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="version.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmDatabase.resx">
+      <DependentUpon>frmDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmDesc.resx">
+      <DependentUpon>frmDesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmDetail.resx">
+      <DependentUpon>frmDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmDiff.resx">
+      <DependentUpon>frmDiff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmScan.resx">
+      <DependentUpon>frmScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmStatus.resx">
+      <DependentUpon>frmStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="general\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="general\frmDSN.resx">
+      <DependentUpon>frmDSN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SQLAutoDocInstall\SQLAutoDocInstall.csproj">
+      <Project>{D7DEA213-A3C8-430B-AD4A-B96AEB9DC8E3}</Project>
+      <Name>SQLAutoDocInstall</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLAutoDocLib\SQLAutoDocLib.csproj">
+      <Project>{4A18DA8F-8A4D-4F6D-ABA4-4DD017A3D0A7}</Project>
+      <Name>SQLAutoDocLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xsl\table.xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xsl\proc.xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xsl\view.xsl">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xsl\function.xsl">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xsl\trigger.xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="VersionHistory.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

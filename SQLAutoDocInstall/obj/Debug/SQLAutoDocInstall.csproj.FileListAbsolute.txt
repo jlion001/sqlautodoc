@@ -1,0 +1,9 @@
+C:\Research\SQLAutoDoc\SQLAutoDocInstall\bin\Debug\SQLAutoDocInstall.dll
+C:\Research\SQLAutoDoc\SQLAutoDocInstall\bin\Debug\SQLAutoDocInstall.pdb
+C:\Research\SQLAutoDoc\SQLAutoDocInstall\obj\Debug\SQLAutoDocInstall.dll
+C:\Research\SQLAutoDoc\SQLAutoDocInstall\obj\Debug\SQLAutoDocInstall.pdb
+C:\Research\SQLAutoDoc\SQLAutoDocInstall\obj\Debug\SQLAutoDocInstall.csprojResolveAssemblyReference.cache
+M:\projects\github\sqlautodoc\SQLAutoDocInstall\obj\Debug\SQLAutoDocInstall.dll
+M:\projects\github\sqlautodoc\SQLAutoDocInstall\obj\Debug\SQLAutoDocInstall.pdb
+M:\projects\github\sqlautodoc\SQLAutoDocInstall\bin\Debug\SQLAutoDocInstall.dll
+M:\projects\github\sqlautodoc\SQLAutoDocInstall\bin\Debug\SQLAutoDocInstall.pdb

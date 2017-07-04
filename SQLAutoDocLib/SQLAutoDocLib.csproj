@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A18DA8F-8A4D-4F6D-ABA4-4DD017A3D0A7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SQLAutoDocLib</RootNamespace>
+    <AssemblyName>SQLAutoDocLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Database\Database.cs" />
+    <Compile Include="BLL\Database\Database_Factory.cs" />
+    <Compile Include="BLL\Function\Function.cs" />
+    <Compile Include="BLL\Function\FunctionHistory.cs" />
+    <Compile Include="BLL\Function\Function_Factory.cs" />
+    <Compile Include="BLL\Procedure\Procedure.cs" />
+    <Compile Include="BLL\Procedure\ProcedureHistory.cs" />
+    <Compile Include="BLL\Procedure\Procedure_Factory.cs" />
+    <Compile Include="BLL\Server.cs" />
+    <Compile Include="BLL\shared\BLLbase.cs" />
+    <Compile Include="BLL\shared\BLLFactoryBase.cs" />
+    <Compile Include="BLL\Table\Table.cs" />
+    <Compile Include="BLL\Table\TableHistory.cs" />
+    <Compile Include="BLL\Table\Table_Factory.cs" />
+    <Compile Include="BLL\Trigger\Trigger.cs" />
+    <Compile Include="BLL\Trigger\TriggerHistory.cs" />
+    <Compile Include="BLL\Trigger\Trigger_Factory.cs" />
+    <Compile Include="BLL\Version\Version.cs" />
+    <Compile Include="BLL\Version\Version_Factory.cs" />
+    <Compile Include="BLL\View\View.cs" />
+    <Compile Include="BLL\View\ViewHistory.cs" />
+    <Compile Include="BLL\View\View_Factory.cs" />
+    <Compile Include="DBL\DBDatabase_Factory.cs" />
+    <Compile Include="DBL\DBFunctionHistory_Factory.cs" />
+    <Compile Include="DBL\DBFunction_Factory.cs" />
+    <Compile Include="DBL\DBProcedureHistory_Factory.cs" />
+    <Compile Include="DBL\DBProcedure_Factory.cs" />
+    <Compile Include="DBL\DBServer_Factory.cs" />
+    <Compile Include="DBL\DBTableHistory_Factory.cs" />
+    <Compile Include="DBL\DBTable_Factory.cs" />
+    <Compile Include="DBL\DBTriggerHistory_Factory.cs" />
+    <Compile Include="DBL\DBTrigger_Factory.cs" />
+    <Compile Include="DBL\DBVersion_Factory.cs" />
+    <Compile Include="DBL\DBViewHistory_Factory.cs" />
+    <Compile Include="DBL\DBView_Factory.cs" />
+    <Compile Include="DBL\shared\DBLBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SCAN\AGENT\DBDatabaseAgent_Factory.cs" />
+    <Compile Include="SCAN\AGENT\DBDescriptionAgent_Factory.cs" />
+    <Compile Include="SCAN\AGENT\DBFunctionAgent_Factory.cs" />
+    <Compile Include="SCAN\AGENT\DBProcedureAgent_Factory.cs" />
+    <Compile Include="SCAN\AGENT\DBServerAgent_Factory.cs" />
+    <Compile Include="SCAN\AGENT\DBTableAgent_Factory.cs" />
+    <Compile Include="SCAN\AGENT\DBTriggerAgent_Factory.cs" />
+    <Compile Include="SCAN\AGENT\DBViewAgent_Factory.cs" />
+    <Compile Include="SCAN\shared\DBLBase.cs" />
+    <Compile Include="SCAN\WORKER\DatabaseDescriptionUpdater.cs" />
+    <Compile Include="SCAN\WORKER\ScanAllFunctions.cs" />
+    <Compile Include="SCAN\WORKER\ScanAllProcedures.cs" />
+    <Compile Include="SCAN\WORKER\ScanAllTriggers.cs" />
+    <Compile Include="SCAN\WORKER\ScanAllViews.cs" />
+    <Compile Include="SCAN\WORKER\ScanBase.cs" />
+    <Compile Include="SCAN\WORKER\ScanDatabase.cs" />
+    <Compile Include="SCAN\WORKER\ScanAllTables.cs" />
+    <Compile Include="SCAN\Scanner.cs" />
+    <Compile Include="UTIL\ConnectionSchemaManager.cs" />
+    <Compile Include="UTIL\DSNConnectionSchemaManager.cs" />
+    <Compile Include="UTIL\Constants.cs" />
+    <Compile Include="UTIL\DBHelper.cs" />
+    <Compile Include="SCAN\DescriptionUpdater.cs" />
+    <Compile Include="UTIL\XMLHelper.cs" />
+    <Compile Include="version.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CMP\" />
+    <Folder Include="RPT\" />
+    <Folder Include="SUM\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="VersionHistory.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

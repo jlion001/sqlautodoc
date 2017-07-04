@@ -1,0 +1,8 @@
+C:\Research\SQLAutoDoc\SQLAutoDocLib\bin\Debug\SQLAutoDocLib.dll
+C:\Research\SQLAutoDoc\SQLAutoDocLib\bin\Debug\SQLAutoDocLib.pdb
+C:\Research\SQLAutoDoc\SQLAutoDocLib\obj\Debug\SQLAutoDocLib.dll
+C:\Research\SQLAutoDoc\SQLAutoDocLib\obj\Debug\SQLAutoDocLib.pdb
+M:\projects\github\sqlautodoc\SQLAutoDocLib\bin\Debug\SQLAutoDocLib.dll
+M:\projects\github\sqlautodoc\SQLAutoDocLib\bin\Debug\SQLAutoDocLib.pdb
+M:\projects\github\sqlautodoc\SQLAutoDocLib\obj\Debug\SQLAutoDocLib.dll
+M:\projects\github\sqlautodoc\SQLAutoDocLib\obj\Debug\SQLAutoDocLib.pdb
